@@ -36,7 +36,19 @@ function () {
   }]);
 
   return List;
-}();
+}(); // var = default variable definition
+// const = define a constant, they can't have own value altered
+
+
+var a = 3; // you can't alter a constant, but you can mute the value inside;
+
+var usuario = {
+  nome: 'Renato Franco',
+  age: 25
+};
+console.log(usuario);
+usuario.nome = 'John Doe';
+console.log(usuario);
 
 var TodoList =
 /*#__PURE__*/
@@ -76,3 +88,27 @@ document.getElementById('novotodo').onclick = function () {
 };
 
 MinhaLista.mostraUsuario(); // MinhaLista.sayHello();
+// Map method
+// Arrays
+
+var arr = [1, 3, 4, 5, 6];
+var newArr = arr.map(function (item) {
+  return item * 2;
+});
+console.log(newArr); // Reduce method
+// Arrays
+
+var sum = arr.reduce(function (total, next) {
+  return total + next;
+});
+console.log(sum); // Filter method
+// Arrays
+
+var filter = arr.filter(function (element) {
+  return element % 2 === 0;
+});
+console.log(filter);
+var find = arr.find(function (item) {
+  return item;
+});
+console.log(find);
