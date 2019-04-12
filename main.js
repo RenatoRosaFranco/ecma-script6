@@ -75,3 +75,13 @@ const find = arr.find(function(item){
 
 console.log(find);
 
+// Arrows functions
+console.log('Arrow function');
+const zArr = arr.map(item => item * 2);
+console.log(zArr);
+
+const test = () => {
+  return 'test';
+}
+
+console.log(test());

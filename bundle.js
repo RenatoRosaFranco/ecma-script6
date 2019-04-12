@@ -111,4 +111,16 @@ console.log(filter);
 var find = arr.find(function (item) {
   return item;
 });
-console.log(find);
+console.log(find); // Arrows functions
+
+console.log('Arrow function');
+var zArr = arr.map(function (item) {
+  return item * 2;
+});
+console.log(zArr);
+
+var test = function test() {
+  return 'test';
+};
+
+console.log(test());
